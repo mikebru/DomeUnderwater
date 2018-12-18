@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c124e7227a7437c43b89f4cbd031e9cb, type: 3}
+  m_Name: New FlexClothAsset
+  m_EditorClassIdentifier: 
+  m_particles: []
+  m_maxParticles: 1000
+  m_springIndices: 
+  m_springCoefficients: []
+  m_springRestLengths: []
+  m_shapeIndices: 
+  m_shapeOffsets: 
+  m_shapeCoefficients: []
+  m_shapeCenters: []
+  m_triangleIndices: 
+  m_inflatable: 0
+  m_inflatableVolume: 0
+  m_inflatablePressure: 0
+  m_inflatableStiffness: 0
+  m_fixedParticles: 
+  m_rebuildAsset: 0
+  m_referenceMesh: {fileID: 4300000, guid: daee0f4c40176e94abdb06dcb71f3804, type: 3}
+  m_meshLocalScale: {x: 1, y: 1, z: 1}
+  m_meshTesselation: 1
+  m_weldingThreshold: 0.001
+  m_stretchStiffness: 1
+  m_bendStiffness: 1
+  m_tetherStiffness: 0
+  m_tetherGive: 0
+  m_pressure: 0
