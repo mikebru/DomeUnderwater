@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
+using UnityEngine.Networking;
 
 public class EnableEventRelay : MonoBehaviour
 {
@@ -9,11 +10,17 @@ public class EnableEventRelay : MonoBehaviour
 
     void OnEnable()
     {
-        Enabled.Invoke();
+       // if (transform.parent.GetComponent<NetworkIdentity>().isLocalPlayer)
+       // {
+            Enabled.Invoke();
+        //}
     }
 
     void OnDisable()
     {
-        Disabled.Invoke();
+        //if (transform.parent.GetComponent<NetworkIdentity>().isLocalPlayer)
+      //  {
+            Disabled.Invoke();
+       // }
     }
 }

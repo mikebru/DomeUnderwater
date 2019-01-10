@@ -55,6 +55,7 @@ public class HandPlayer : NetworkBehaviour
         {
             gameObject.name = "Player (Local)";
 
+            /*
             leftHandEnabler = leftHand.gameObject.AddComponent<EnableEventRelay>();
             leftHandEnabler.Enabled = new UnityEngine.Events.UnityEvent();
             leftHandEnabler.Disabled = new UnityEngine.Events.UnityEvent();
@@ -66,6 +67,7 @@ public class HandPlayer : NetworkBehaviour
             rightHandEnabler.Disabled = new UnityEngine.Events.UnityEvent();
             rightHandEnabler.Enabled.AddListener(CmdRightHandEnable);
             rightHandEnabler.Disabled.AddListener(CmdRightHandDisable);
+            */
 
             for (int i = 0; i < enableGameObjectsIfLocal.Length; i++) enableGameObjectsIfLocal[i].SetActive(true);
         }
@@ -77,7 +79,7 @@ public class HandPlayer : NetworkBehaviour
 
     #region Hand Enabling/Disabling
     [Command]
-    void CmdLeftHandEnable()
+    public void CmdLeftHandEnable()
     {
         if (isClient) leftHand.gameObject.SetActive(true);
         else RpcLeftHandEnable();
@@ -90,7 +92,7 @@ public class HandPlayer : NetworkBehaviour
     }
 
     [Command]
-    void CmdLeftHandDisable()
+    public void CmdLeftHandDisable()
     {
         if (isClient && isLocalPlayer) leftHand.gameObject.SetActive(false);
         else RpcLeftHandDisable();
@@ -105,7 +107,7 @@ public class HandPlayer : NetworkBehaviour
 
     // right hand
     [Command]
-    void CmdRightHandEnable()
+    public void CmdRightHandEnable()
     {
         if (isClient && isLocalPlayer) rightHand.gameObject.SetActive(true);
         else RpcRightHandEnable();
@@ -119,7 +121,7 @@ public class HandPlayer : NetworkBehaviour
     }
 
     [Command]
-    void CmdRightHandDisable()
+    public void CmdRightHandDisable()
     {
         if (isClient && isLocalPlayer) rightHand.gameObject.SetActive(false);
         else RpcRightHandDisable();
