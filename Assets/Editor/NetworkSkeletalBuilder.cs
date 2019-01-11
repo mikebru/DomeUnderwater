@@ -18,6 +18,10 @@ public class NetworkSkeletalBuilder : EditorWindow
 
     [SerializeField] Transform skeletalRoot;
 
+    [Range(0,29)]
+    [SerializeField] float sendRate = 29;
+
+
     void OnGUI()
     {
         if (selection != null)
@@ -45,6 +49,7 @@ public class NetworkSkeletalBuilder : EditorWindow
                 else
                 {
                     skeletalRoot = (Transform)EditorGUILayout.ObjectField("skeleton root", skeletalRoot, typeof(Transform), true);
+                    sendRate = (int)EditorGUILayout.Slider(sendRate, 0.0f, 35);
 
                     if (skeletalRoot == null)
                     {
@@ -63,6 +68,13 @@ public class NetworkSkeletalBuilder : EditorWindow
                         NetworkTransformChild[] children = selection.GetComponents<NetworkTransformChild>();
 
                         for (int i = 0; i < children.Length; i++) DestroyImmediate(children[i]);
+                    }
+
+                    if (GUILayout.Button("Update Child Send Rate"))
+                    {
+                        NetworkTransformChild[] children = selection.GetComponents<NetworkTransformChild>();
+
+                        for (int i = 0; i < children.Length; i++) children[i].sendInterval = 1.0f/sendRate;
                     }
                 }
             }

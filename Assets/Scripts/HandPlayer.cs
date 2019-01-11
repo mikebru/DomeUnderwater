@@ -6,6 +6,10 @@ public class HandPlayer : NetworkBehaviour
 {
     [SerializeField] Transform leftHand;
     [SerializeField] Transform rightHand;
+
+    [SerializeField] Transform leftHand_Physics;
+    [SerializeField] Transform rightHand_Physics;
+
     EnableEventRelay leftHandEnabler;
     EnableEventRelay rightHandEnabler;
 
@@ -75,6 +79,8 @@ public class HandPlayer : NetworkBehaviour
 
         leftHand.gameObject.SetActive(true);
         rightHand.gameObject.SetActive(true);
+        leftHand_Physics.gameObject.SetActive(true);
+        rightHand_Physics.gameObject.SetActive(true);
     }
 
     #region Hand Enabling/Disabling
