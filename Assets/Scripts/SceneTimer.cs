@@ -8,7 +8,11 @@ public class SceneTimer : MonoBehaviour
     public bool AutoStart = false;
 
     public PlayableDirector cargoTimeline;
-    public TrashGenerator trashGen;
+
+    public Transform TrashSpawnPoint;
+    public GameObject trashGenerator;
+
+    private GameObject trashGen;
 
     public float fadeTime = 10;
     public MeshRenderer DissolveDome;
@@ -18,7 +22,7 @@ public class SceneTimer : MonoBehaviour
     {
         if (AutoStart == true)
         {
-            StartCoroutine(CargoShipWait());
+            StartCoroutine(FadeIn());
         }
     }
 
@@ -38,8 +42,9 @@ public class SceneTimer : MonoBehaviour
         //wait for 30 seconds
         yield return new WaitForSeconds(20);
 
-        trashGen.spawnRate = .1f;
+        trashGen = Instantiate(trashGenerator, TrashSpawnPoint.transform);
 
+        trashGen.transform.localPosition = Vector3.zero;
 
         //wait for 2.5 minutes
         yield return new WaitForSeconds(150);
@@ -62,10 +67,42 @@ public class SceneTimer : MonoBehaviour
         }
 
 
+        yield return new WaitForSeconds(1);
 
+
+        Destroy(trashGen);
+
+        //toggle cargoship
+        cargoTimeline.time = 0;
+        cargoTimeline.Play();
+
+        yield return new WaitForSeconds(.1f);
+
+        cargoTimeline.Stop();
+
+        yield return new WaitForSeconds(5);
+
+        StartCoroutine(FadeIn());
     }
 
+    public IEnumerator FadeIn()
+    {
 
+        float t = 0;
+
+        while (t < fadeTime)
+        {
+            t += Time.deltaTime;
+
+            DissolveDome.material.SetFloat("_Amount", Mathf.Lerp(0, 1, t / fadeTime));
+
+            yield return new WaitForFixedUpdate();
+        }
+
+
+        StartCoroutine(CargoShipWait());
+
+    }
 
 
 

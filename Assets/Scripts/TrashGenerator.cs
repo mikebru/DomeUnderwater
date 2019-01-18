@@ -15,6 +15,11 @@ public class TrashGenerator : MonoBehaviour
     }
 
 
+    private void OnDisable()
+    {
+        StopCoroutine(trashSpawn());
+    }
+
     IEnumerator trashSpawn()
     {
         int random = Random.Range(0, trashPrefabs.Length);
