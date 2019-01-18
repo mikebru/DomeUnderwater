@@ -8,7 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/networkTest.unity
     guid: 0409dd65245da284d887a8e44730fdb6
+  - enabled: 0
+    path: Assets/Scenes/LeapConnect.unity
+    guid: 5ac84dc9ba475574aa054c327fe6d09e
+  - enabled: 1
+    path: Assets/Scenes/Underwater.unity
+    guid: a8c4b1252d66cab4b9332d0c6b669466
   m_configObjects: {}

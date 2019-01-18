@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: 58396f8a7b59e704f92ea34a2aae265a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: beer01
+    100002: beer02
+    100004: beer03
+    100006: beer04
+    100008: beer05
+    100010: Chips01
+    100012: Chips02
+    100014: Chips03
+    100016: Chips04
+    100018: Chips05
+    100020: Conserve01
+    100022: Conserve02
+    100024: Conserve03
+    100026: Conserve04
+    100028: Conserve05
+    100030: Conserve06
+    100032: Conserve07
+    100034: Display 002
+    100036: Event 002
+    100038: Leaf_1
+    100040: Leaf_10
+    100042: Leaf_11
+    100044: Leaf_12
+    100046: Leaf_2
+    100048: Leaf_3
+    100050: Leaf_4
+    100052: Leaf_5
+    100054: Leaf_6
+    100056: Leaf_7
+    100058: Leaf_8
+    100060: Leaf_9
+    100062: package008
+    100064: package01
+    100066: package02
+    100068: package03
+    100070: package04
+    100072: package05
+    100074: package06
+    100076: Paper01
+    100078: Paper02
+    100080: Paper03
+    100082: Paper04
+    100084: Paper05
+    100086: Paper06
+    100088: Paper07
+    100090: Paper07 1
+    100092: Paper08
+    100094: Paper09
+    100096: Paper10
+    100098: Paper11
+    100100: Sigarette01
+    100102: Sigarette02
+    100104: Sigarette03
+    100106: Sigarette04
+    100108: Sigarette05
+    100110: Sigarette06
+    100112: Sigarette07
+    100114: Sigarette08
+    100116: Sigarette09
+    100118: Sigarette10
+    100120: Sigarette11
+    100122: Sigarette12
+    100124: Sigarette13
+    100126: Sigarette14
+    100128: Sigarette15
+    100130: Sigarette16
+    100132: Sigarette17
+    100134: Sigarette18
+    100136: Sigarette19
+    100138: Sigarette20
+    100140: stick01
+    100142: stick02
+    100144: stick03
+    100146: stick04
+    100148: stick05
+    100150: stick06
+    100152: Stone
+    100154: Stone009
+    100156: Stone010
+    100158: Stone011
+    100160: Stone012
+    100162: Stone013
+    100164: Stone014
+    100166: Stone015
+    100168: Stone016
+    100170: //RootNode
+    100172: trash01
+    100174: trash02
+    100176: trash03
+    100178: trash04
+    100180: trash05
+    400000: beer01
+    400002: beer02
+    400004: beer03
+    400006: beer04
+    400008: beer05
+    400010: Chips01
+    400012: Chips02
+    400014: Chips03
+    400016: Chips04
+    400018: Chips05
+    400020: Conserve01
+    400022: Conserve02
+    400024: Conserve03
+    400026: Conserve04
+    400028: Conserve05
+    400030: Conserve06
+    400032: Conserve07
+    400034: Display 002
+    400036: Event 002
+    400038: Leaf_1
+    400040: Leaf_10
+    400042: Leaf_11
+    400044: Leaf_12
+    400046: Leaf_2
+    400048: Leaf_3
+    400050: Leaf_4
+    400052: Leaf_5
+    400054: Leaf_6
+    400056: Leaf_7
+    400058: Leaf_8
+    400060: Leaf_9
+    400062: package008
+    400064: package01
+    400066: package02
+    400068: package03
+    400070: package04
+    400072: package05
+    400074: package06
+    400076: Paper01
+    400078: Paper02
+    400080: Paper03
+    400082: Paper04
+    400084: Paper05
+    400086: Paper06
+    400088: Paper07
+    400090: Paper07 1
+    400092: Paper08
+    400094: Paper09
+    400096: Paper10
+    400098: Paper11
+    400100: Sigarette01
+    400102: Sigarette02
+    400104: Sigarette03
+    400106: Sigarette04
+    400108: Sigarette05
+    400110: Sigarette06
+    400112: Sigarette07
+    400114: Sigarette08
+    400116: Sigarette09
+    400118: Sigarette10
+    400120: Sigarette11
+    400122: Sigarette12
+    400124: Sigarette13
+    400126: Sigarette14
+    400128: Sigarette15
+    400130: Sigarette16
+    400132: Sigarette17
+    400134: Sigarette18
+    400136: Sigarette19
+    400138: Sigarette20
+    400140: stick01
+    400142: stick02
+    400144: stick03
+    400146: stick04
+    400148: stick05
+    400150: stick06
+    400152: Stone
+    400154: Stone009
+    400156: Stone010
+    400158: Stone011
+    400160: Stone012
+    400162: Stone013
+    400164: Stone014
+    400166: Stone015
+    400168: Stone016
+    400170: //RootNode
+    400172: trash01
+    400174: trash02
+    400176: trash03
+    400178: trash04
+    400180: trash05
+    2100000: vray paket2
+    2100002: vray paket1
+    2100004: vray Doc01
+    2100006: vray Doc02
+    2100008: vray Eticets01
+    2100010: vray Eticets05
+    2100012: vray Doc03
+    2100014: vray Eticets02
+    2100016: vray Eticets06
+    2100018: vray stone01
+    2100020: vray Eticets04
+    2100022: vray Eticets03
+    2100024: 'vray Material #6614'
+    2100026: vray Chips01
+    2100028: 'vray Material #6620'
+    2100030: 'vray Material #6617'
+    2100032: 'vray Material #6623'
+    2100034: 'vray Material #4'
+    2100036: vray Conserve02
+    2100038: vray bark
+    2100040: 'vray Material #14'
+    2100042: 'vray Material #16'
+    2100044: 'vray Material #10'
+    2100046: 'vray Material #13'
+    2100048: 'vray Material #15'
+    2100050: 'vray Material #9'
+    2100052: vray bark2
+    2100054: vray bark3
+    2100056: vray SimpleLeaf012
+    2100058: vray SimpleLeaf006
+    2100060: vray SimpleLeaf004
+    2100062: vray SimpleLeaf008
+    2100064: vray SimpleLeaf010
+    2100066: vray SimpleLeaf007
+    2100068: vray SimpleLeaf011
+    2100070: vray SimpleLeaf009
+    2100072: vray SimpleLeaf005
+    2100074: vray SimpleLeaf003
+    2100076: vray SimpleLeaf002
+    2100078: vray SimpleLeaf001
+    2100080: vray Banka05
+    2100082: 'vray Material #11040'
+    2100084: vray Banka03
+    2100086: vray stone03
+    2100088: vray stone02
+    2100090: vray stone04
+    2100092: vray Banka01
+    2100094: vray stone05
+    2100096: vray Banka04
+    2100098: vray Banka02
+    2300000: beer01
+    2300002: beer02
+    2300004: beer03
+    2300006: beer04
+    2300008: beer05
+    2300010: Chips01
+    2300012: Chips02
+    2300014: Chips03
+    2300016: Chips04
+    2300018: Chips05
+    2300020: Conserve01
+    2300022: Conserve02
+    2300024: Conserve03
+    2300026: Conserve04
+    2300028: Conserve05
+    2300030: Conserve06
+    2300032: Conserve07
+    2300034: Leaf_1
+    2300036: Leaf_10
+    2300038: Leaf_11
+    2300040: Leaf_12
+    2300042: Leaf_2
+    2300044: Leaf_3
+    2300046: Leaf_4
+    2300048: Leaf_5
+    2300050: Leaf_6
+    2300052: Leaf_7
+    2300054: Leaf_8
+    2300056: Leaf_9
+    2300058: package008
+    2300060: package01
+    2300062: package02
+    2300064: package03
+    2300066: package04
+    2300068: package05
+    2300070: package06
+    2300072: Paper01
+    2300074: Paper02
+    2300076: Paper03
+    2300078: Paper04
+    2300080: Paper05
+    2300082: Paper06
+    2300084: Paper07
+    2300086: Paper07 1
+    2300088: Paper08
+    2300090: Paper09
+    2300092: Paper10
+    2300094: Paper11
+    2300096: Sigarette01
+    2300098: Sigarette02
+    2300100: Sigarette03
+    2300102: Sigarette04
+    2300104: Sigarette05
+    2300106: Sigarette06
+    2300108: Sigarette07
+    2300110: Sigarette08
+    2300112: Sigarette09
+    2300114: Sigarette10
+    2300116: Sigarette11
+    2300118: Sigarette12
+    2300120: Sigarette13
+    2300122: Sigarette14
+    2300124: Sigarette15
+    2300126: Sigarette16
+    2300128: Sigarette17
+    2300130: Sigarette18
+    2300132: Sigarette19
+    2300134: Sigarette20
+    2300136: stick01
+    2300138: stick02
+    2300140: stick03
+    2300142: stick04
+    2300144: stick05
+    2300146: stick06
+    2300148: Stone009
+    2300150: Stone010
+    2300152: Stone011
+    2300154: Stone012
+    2300156: Stone013
+    2300158: Stone014
+    2300160: Stone015
+    2300162: Stone016
+    2300164: trash01
+    2300166: trash02
+    2300168: trash03
+    2300170: trash04
+    2300172: trash05
+    3300000: beer01
+    3300002: beer02
+    3300004: beer03
+    3300006: beer04
+    3300008: beer05
+    3300010: Chips01
+    3300012: Chips02
+    3300014: Chips03
+    3300016: Chips04
+    3300018: Chips05
+    3300020: Conserve01
+    3300022: Conserve02
+    3300024: Conserve03
+    3300026: Conserve04
+    3300028: Conserve05
+    3300030: Conserve06
+    3300032: Conserve07
+    3300034: Leaf_1
+    3300036: Leaf_10
+    3300038: Leaf_11
+    3300040: Leaf_12
+    3300042: Leaf_2
+    3300044: Leaf_3
+    3300046: Leaf_4
+    3300048: Leaf_5
+    3300050: Leaf_6
+    3300052: Leaf_7
+    3300054: Leaf_8
+    3300056: Leaf_9
+    3300058: package008
+    3300060: package01
+    3300062: package02
+    3300064: package03
+    3300066: package04
+    3300068: package05
+    3300070: package06
+    3300072: Paper01
+    3300074: Paper02
+    3300076: Paper03
+    3300078: Paper04
+    3300080: Paper05
+    3300082: Paper06
+    3300084: Paper07
+    3300086: Paper07 1
+    3300088: Paper08
+    3300090: Paper09
+    3300092: Paper10
+    3300094: Paper11
+    3300096: Sigarette01
+    3300098: Sigarette02
+    3300100: Sigarette03
+    3300102: Sigarette04
+    3300104: Sigarette05
+    3300106: Sigarette06
+    3300108: Sigarette07
+    3300110: Sigarette08
+    3300112: Sigarette09
+    3300114: Sigarette10
+    3300116: Sigarette11
+    3300118: Sigarette12
+    3300120: Sigarette13
+    3300122: Sigarette14
+    3300124: Sigarette15
+    3300126: Sigarette16
+    3300128: Sigarette17
+    3300130: Sigarette18
+    3300132: Sigarette19
+    3300134: Sigarette20
+    3300136: stick01
+    3300138: stick02
+    3300140: stick03
+    3300142: stick04
+    3300144: stick05
+    3300146: stick06
+    3300148: Stone009
+    3300150: Stone010
+    3300152: Stone011
+    3300154: Stone012
+    3300156: Stone013
+    3300158: Stone014
+    3300160: Stone015
+    3300162: Stone016
+    3300164: trash01
+    3300166: trash02
+    3300168: trash03
+    3300170: trash04
+    3300172: trash05
+    4300000: package01
+    4300002: package02
+    4300004: package03
+    4300006: package008
+    4300008: Paper01
+    4300010: Paper02
+    4300012: package04
+    4300014: package05
+    4300016: package06
+    4300018: trash01
+    4300020: Paper05
+    4300022: Paper03
+    4300024: Paper06
+    4300026: Paper07
+    4300028: Paper10
+    4300030: Paper07
+    4300032: Paper09
+    4300034: Paper11
+    4300036: Paper08
+    4300038: Paper04
+    4300040: Chips04
+    4300042: Chips05
+    4300044: Chips03
+    4300046: trash02
+    4300048: Conserve04
+    4300050: Conserve07
+    4300052: trash03
+    4300054: stick02
+    4300056: stick01
+    4300058: Chips02
+    4300060: Chips01
+    4300062: trash04
+    4300064: Leaf_8
+    4300066: stick05
+    4300068: stick03
+    4300070: stick06
+    4300072: stick04
+    4300074: Leaf_12
+    4300076: Leaf_10
+    4300078: Leaf_11
+    4300080: Leaf_9
+    4300082: Leaf_1
+    4300084: Leaf_7
+    4300086: Leaf_5
+    4300088: Leaf_6
+    4300090: Leaf_3
+    4300092: Leaf_2
+    4300094: Leaf_4
+    4300096: beer05
+    4300098: beer01
+    4300100: trash05
+    4300102: Sigarette01
+    4300104: Sigarette02
+    4300106: Sigarette03
+    4300108: Sigarette04
+    4300110: Sigarette05
+    4300112: Sigarette06
+    4300114: Sigarette07
+    4300116: Sigarette08
+    4300118: Sigarette09
+    4300120: Sigarette10
+    4300122: Sigarette11
+    4300124: Sigarette12
+    4300126: Sigarette13
+    4300128: Sigarette14
+    4300130: Sigarette15
+    4300132: Sigarette16
+    4300134: Sigarette17
+    4300136: Sigarette18
+    4300138: Sigarette19
+    4300140: Sigarette20
+    4300142: Conserve01
+    4300144: Conserve02
+    4300146: Conserve06
+    4300148: Conserve03
+    4300150: Conserve05
+    4300152: beer04
+    4300154: beer03
+    4300156: beer02
+    4300158: Stone011
+    4300160: Stone009
+    4300162: Stone013
+    4300164: Stone010
+    4300166: Stone015
+    4300168: Stone012
+    4300170: Stone016
+    4300172: Stone014
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
