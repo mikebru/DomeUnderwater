@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ContinousRotate : MonoBehaviour
 {
+
+    public Vector3 rotateVector;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,6 @@ public class ContinousRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Rotate(rotateVector);
     }
 }
