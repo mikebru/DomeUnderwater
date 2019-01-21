@@ -52,7 +52,7 @@ public class SceneTimer : MonoBehaviour
 
     public IEnumerator DumpWait()
     {
-        //wait for 30 seconds
+        //wait for 20 seconds
         yield return new WaitForSeconds(20);
 
         trashGen = Instantiate(trashGenerator, TrashSpawnPoint.transform);
