@@ -12,6 +12,7 @@ public class SceneTimer : MonoBehaviour
 
 
     public UnityEvent CargoShipEvent;
+    public UnityEvent StopVideoEvent;
 
     public Transform TrashSpawnPoint;
     public GameObject trashGenerator;
@@ -37,8 +38,16 @@ public class SceneTimer : MonoBehaviour
 
         CargoShipEvent.Invoke();
         cargoTimeline.Play();
+        StartCoroutine(WaitStopVideo());
 
         StartCoroutine(DumpWait());
+    }
+
+    IEnumerator WaitStopVideo()
+    {
+        yield return new WaitForSeconds(27);
+
+        StopVideoEvent.Invoke();
     }
 
     public IEnumerator DumpWait()

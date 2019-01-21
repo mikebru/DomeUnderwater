@@ -7,6 +7,8 @@ public class HandPlayer : NetworkBehaviour
     [SerializeField] Transform leftHand;
     [SerializeField] Transform rightHand;
 
+    public Material remoteHandMaterial;
+
     [SerializeField] Transform leftHand_Physics;
     [SerializeField] Transform rightHand_Physics;
 
@@ -52,6 +54,9 @@ public class HandPlayer : NetworkBehaviour
                 for (int i = 0; i < rightHandFingers.Length; i++) Destroy(rightHandFingers[i]);
             }
 
+            leftHand.GetComponentInChildren<SkinnedMeshRenderer>().material = remoteHandMaterial;
+            rightHand.GetComponentInChildren<SkinnedMeshRenderer>().material = remoteHandMaterial;
+
             gameObject.tag = "Untagged";
             gameObject.name = "Player (Remote)";
         }
@@ -79,8 +84,11 @@ public class HandPlayer : NetworkBehaviour
 
         leftHand.gameObject.SetActive(true);
         rightHand.gameObject.SetActive(true);
-        leftHand_Physics.gameObject.SetActive(true);
-        rightHand_Physics.gameObject.SetActive(true);
+        if (leftHand_Physics != null)
+        {
+            leftHand_Physics.gameObject.SetActive(true);
+            rightHand_Physics.gameObject.SetActive(true);
+        }
     }
 
     #region Hand Enabling/Disabling
