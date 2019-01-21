@@ -10,10 +10,6 @@ public class SceneTimer : MonoBehaviour
 
     public PlayableDirector cargoTimeline;
 
-
-    public UnityEvent CargoShipEvent;
-    public UnityEvent StopVideoEvent;
-
     public Transform TrashSpawnPoint;
     public GameObject trashGenerator;
 
@@ -21,6 +17,11 @@ public class SceneTimer : MonoBehaviour
 
     public float fadeTime = 10;
     public MeshRenderer DissolveDome;
+
+    public AudioControl audioController;
+
+    public UnityEvent CargoShipEvent;
+    public UnityEvent StopVideoEvent;
 
     // Start is called before the first frame update
     void Start()
@@ -31,13 +32,38 @@ public class SceneTimer : MonoBehaviour
         }
     }
 
+    public IEnumerator FadeIn()
+    {
+
+        audioController.PlayAudio(0);
+
+        float t = 0;
+
+        while (t < fadeTime)
+        {
+            t += Time.deltaTime;
+
+            audioController.volumeSource(0, Mathf.Lerp(0, 1, t / fadeTime));
+
+            DissolveDome.material.SetFloat("_Amount", Mathf.Lerp(0, 1, t / fadeTime));
+
+            yield return new WaitForFixedUpdate();
+        }
+
+
+        StartCoroutine(CargoShipWait());
+    }
+
     public IEnumerator CargoShipWait()
     {
-        //wait for 3 minutes 
+        //wait for 2 minutes 
         yield return new WaitForSeconds(120);
+
+        audioController.PlayAudio(1);
 
         CargoShipEvent.Invoke();
         cargoTimeline.Play();
+
         StartCoroutine(WaitStopVideo());
 
         StartCoroutine(DumpWait());
@@ -54,6 +80,9 @@ public class SceneTimer : MonoBehaviour
     {
         //wait for 20 seconds
         yield return new WaitForSeconds(20);
+
+        audioController.StopAudio(1);
+        audioController.PlayAudio(2);
 
         trashGen = Instantiate(trashGenerator, TrashSpawnPoint.transform);
 
@@ -74,11 +103,15 @@ public class SceneTimer : MonoBehaviour
         {
             t += Time.deltaTime;
 
+            audioController.volumeSource(2, Mathf.Lerp(.5f, 0, t / fadeTime));
+
+
             DissolveDome.material.SetFloat("_Amount", Mathf.Lerp(1, 0, t / fadeTime));
 
             yield return new WaitForFixedUpdate();
         }
 
+        audioController.StopAudio(2);
 
         yield return new WaitForSeconds(1);
 
@@ -98,24 +131,7 @@ public class SceneTimer : MonoBehaviour
         StartCoroutine(FadeIn());
     }
 
-    public IEnumerator FadeIn()
-    {
 
-        float t = 0;
-
-        while (t < fadeTime)
-        {
-            t += Time.deltaTime;
-
-            DissolveDome.material.SetFloat("_Amount", Mathf.Lerp(0, 1, t / fadeTime));
-
-            yield return new WaitForFixedUpdate();
-        }
-
-
-        StartCoroutine(CargoShipWait());
-
-    }
 
 
 
