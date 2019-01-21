@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.Events;
 
 public class SceneTimer : MonoBehaviour
 {
     public bool AutoStart = false;
 
     public PlayableDirector cargoTimeline;
+
+
+    public UnityEvent CargoShipEvent;
 
     public Transform TrashSpawnPoint;
     public GameObject trashGenerator;
@@ -29,9 +33,9 @@ public class SceneTimer : MonoBehaviour
     public IEnumerator CargoShipWait()
     {
         //wait for 3 minutes 
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(120);
 
-
+        CargoShipEvent.Invoke();
         cargoTimeline.Play();
 
         StartCoroutine(DumpWait());
