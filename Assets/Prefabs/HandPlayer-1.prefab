@@ -184,8 +184,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 835fa3cd5e8fa5042a26eeccdacc7d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 3116119997181149661}
-  rightHand: {fileID: 3107818416555080894}
+  leftHand: {fileID: 923641473}
+  rightHand: {fileID: 1100082868}
+  remoteHandMaterial: {fileID: 0}
   leftHand_Physics: {fileID: 923641473}
   rightHand_Physics: {fileID: 1100082868}
   removeComponentIfNonLocal:
@@ -4818,19 +4819,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 432918, guid: b9c7aaf0d314cb847a3b2a20e893f1b6, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 432918, guid: b9c7aaf0d314cb847a3b2a20e893f1b6, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 432918, guid: b9c7aaf0d314cb847a3b2a20e893f1b6, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11406336, guid: b9c7aaf0d314cb847a3b2a20e893f1b6, type: 3}
       propertyPath: ModelPool.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11406336, guid: b9c7aaf0d314cb847a3b2a20e893f1b6, type: 3}
       propertyPath: _leapProvider
@@ -4843,11 +4844,11 @@ PrefabInstance:
     - target: {fileID: 11406336, guid: b9c7aaf0d314cb847a3b2a20e893f1b6, type: 3}
       propertyPath: ModelPool.Array.data[0].LeftModel
       value: 
-      objectReference: {fileID: 3079174609122292780}
+      objectReference: {fileID: 1094302258}
     - target: {fileID: 11406336, guid: b9c7aaf0d314cb847a3b2a20e893f1b6, type: 3}
       propertyPath: ModelPool.Array.data[0].RightModel
       value: 
-      objectReference: {fileID: 3077654575614894291}
+      objectReference: {fileID: 933548629}
     - target: {fileID: 11406336, guid: b9c7aaf0d314cb847a3b2a20e893f1b6, type: 3}
       propertyPath: ModelPool.Array.data[0].IsEnabled
       value: 1
